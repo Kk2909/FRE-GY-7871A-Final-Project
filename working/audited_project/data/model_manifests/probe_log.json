@@ -1,0 +1,31 @@
+[
+  {
+    "source": "marketplace",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "source": "pbs",
+    "error": "HTTP Error 401: Unauthorized"
+  },
+  {
+    "source": "calcat",
+    "status": 200,
+    "bytes": 9001,
+    "total": "1",
+    "snippet": "[{'id': 6, 'count': 1238, 'description': \"Famously one of the world's largest economies, California is a major player in just about every field \u2014\\xa0from agriculture to tech. We delve into the impact of the state's dollars-and-cents decisions.\", 'link': 'https://calmatters.org/category/economy/', 'name': 'Economy', 'slug': 'economy', 'taxonomy': 'category', 'parent': 0, 'meta': [], 'acf': [], 'yoa"
+  },
+  {
+    "source": "hn",
+    "status": 200,
+    "bytes": 2130,
+    "total": null,
+    "snippet": "{'exhaustive': {'nbHits': False, 'typo': False}, 'exhaustiveNbHits': False, 'exhaustiveTypo': False, 'hits': [{'_highlightResult': {'author': {'matchLevel': 'none', 'matchedWords': [], 'value': 'ghgr'}, 'title': {'fullyHighlighted': False, 'matchLevel': 'full', 'matchedWords': ['inflation'], 'value': 'Show HN: See your losses to <em>inflation</em> in real time'}, 'url': {'fullyHighlighted': False,"
+  },
+  {
+    "source": "hf",
+    "status": 200,
+    "bytes": 1629,
+    "total": null,
+    "snippet": "{'_id': '6477abf6f911e9e76c69392b', 'id': 'Xenova/finbert', 'private': False, 'pipeline_tag': 'text-classification', 'library_name': 'transformers.js', 'tags': ['transformers.js', 'onnx', 'bert', 'text-classification', 'base_model:ProsusAI/finbert', 'base_model:quantized:ProsusAI/finbert', 'region:us'], 'downloads': 13556, 'likes': 3, 'modelId': 'Xenova/finbert', 'author': 'Xenova', 'sha': '8f269a"
+  }
+]

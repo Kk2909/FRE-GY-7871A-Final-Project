@@ -1,0 +1,19 @@
+{
+  "n_candidates": 4662,
+  "n_unique_titles": 4604,
+  "n_sample": 3189,
+  "by_source": {
+    "Hacker News": 905,
+    "Fortune": 827,
+    "Colorado Sun": 642,
+    "NPR": 638,
+    "Texas Tribune": 89,
+    "CT Mirror": 88
+  },
+  "first_month": "2019-11",
+  "last_month": "2026-09",
+  "n_months": 83,
+  "incomplete_windows": 152,
+  "sampling": "Max20 hash-selected unique titles per outlet-month from fixed public retrieval frames, selected before AI scores",
+  "original_data_only": true
+}

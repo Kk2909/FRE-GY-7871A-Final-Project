@@ -1,0 +1,42 @@
+[
+  [
+    "Introduction",
+    35,
+    "Hi everyone. This project looks at whether economic news helps explain why consumers feel worse than headline economic indicators might suggest. The main finding is that news tone helps a simple economic model, but that benefit weakens once broader conditions and previous sentiment are included. The sources also emphasize different economic issues, which affects what the news measure actually represents. The presentation focuses on these findings and what can reasonably be concluded from them."
+  ],
+  [
+    "How economic news was measured",
+    45,
+    "The text analysis uses 670 economic titles from NPR, Colorado Sun, and Hacker News. Each title is classified as describing adverse, mixed, or favorable economic conditions using automated labels. Topic words and price framing are also measured, while selected numerical claims are checked against official releases. The monthly index is calculated by averaging the labels within each source and then weighting the three sources equally. This produces 47 balanced months. After aligning the dates with the economic data, 45 usable observations remain, with 21 months used to evaluate predictions."
+  ],
+  [
+    "Performance drops on new titles",
+    40,
+    "The classification approach was checked to see whether its performance carried over to different titles. The hybrid classifier agreed with automated reference labels on 68 percent of titles during development evaluation. On a separate set of 300 titles, agreement fell to 53.3 percent. The two reference sets differ, but the drop warns against assuming that development performance will carry over. The primary index therefore uses the saved automated coding, while the failed classifier comparison remains part of the analysis. The labels are provisional, so the findings need to be interpreted cautiously."
+  ],
+  [
+    "Sources emphasize different economic issues",
+    45,
+    "The source comparison shows why the choice of text matters. Housing words appear in about 31 percent of the Colorado Sun sample, compared with 10 percent of Hacker News titles. Inflation-rate wording shows the reverse pattern: about 20 percent for Hacker News and 3 percent for Colorado Sun. This suggests that a tone index partly reflects which problems a source covers. Coverage of housing pressure can sound negative while accurately describing household difficulties. Equal weighting helps with differences in volume, but these three sources still cannot represent the whole media environment."
+  ],
+  [
+    "Does news improve the predictions?",
+    55,
+    "The next step tests whether the monthly tone index improves sentiment predictions. All four bars use the same 21 evaluation months. The measure is RMSE, so lower values mean smaller prediction errors. Adding tone to the simple economic model reduces error from 12.07 to 10.82. However, that improvement is uncertain because its confidence interval includes zero. The more useful comparison is the lower pair. Broader controls without tone produce an error of 5.82. Adding tone gives 6.06. So the larger improvement is already present without news. The overall improvement therefore cannot be credited to media tone."
+  ],
+  [
+    "Last month is a strong benchmark",
+    40,
+    "The models are also compared with a simple alternative: predicting that sentiment stays at last month's level. That produces an error of 4.09. Broader controls combined with previous sentiment give 3.98, while adding tone increases error to 4.32. This shows that recent sentiment already contains substantial information useful for prediction. The original tone measure does not demonstrate a dependable additional forecasting benefit once that information is included. This finding applies to this particular measure and sample; it does not establish that news never matters."
+  ],
+  [
+    "Different wording can describe the same fact",
+    45,
+    "The factual examples help separate tone from bias. For the July 2020 GDP release, a 32.9 percent annualized decline corresponds to roughly a 9.5 percent decline over the actual quarter. Both numbers can describe the same event, although they sound quite different without the units. A negative or alarming headline is therefore not automatically inaccurate. Its context matters. These examples show why a negative tone score should not be treated as a direct measure of bias. They also do not establish how readers actually responded."
+  ],
+  [
+    "What the results suggest",
+    55,
+    "The results suggest that the simple economic model misses important information, but the original news-tone measure does not reliably improve the broader forecast comparisons. A dictionary measure performs better in one secondary check, which provides a reason for further investigation. In practice, the index could help monitor the economic conversation and identify unusual sentiment gaps. Stronger evidence would be needed before relying on it for forecasting. The main limitations are the small sample, provisional labels, and revisions in the historical economic data. A further step would be an experiment comparing equally truthful framings of the same information to test whether the wording changes people's responses. Thank you."
+  ]
+]

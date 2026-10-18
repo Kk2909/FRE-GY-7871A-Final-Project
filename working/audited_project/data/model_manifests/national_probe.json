@@ -1,0 +1,14 @@
+[
+  {
+    "source": "motherjones",
+    "error": "Expecting value: line 1 column 1 (char 0)"
+  },
+  {
+    "source": "stateline",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "source": "newsweek",
+    "error": "HTTP Error 403: Forbidden"
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "source": "guardian_test",
+    "error": "HTTP Error 401: Unauthorized"
+  },
+  {
+    "source": "truthout",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "source": "reason",
+    "status": 200,
+    "total": "30",
+    "snippet": "[{'id': 8167653, 'date': '2022-01-26T15:01:58', 'link': 'https://reason.com/2022/01/26/shooting-the-guns-you-cant-realistically-own-at-the-gun-industrys-range-day/', 'title': {'rendered': \"Shooting the Guns You Can't (Realistically) Own at the Gun Industry's Range Day\"}, 'excerpt': {'rendered': '<p>Very few people in the U.S. have had the experienc"
+  },
+  {
+    "source": "fortune",
+    "status": 200,
+    "total": "103",
+    "snippet": "[{'id': 3211075, 'date': '2022-01-31T18:22:02', 'link': 'https://fortune.com/2022/01/31/labor-shortage-wage-hikes-private-sector-biggest-raises-in-20-years-two-decades/', 'title': {'rendered': 'Worker shortages just forced employers to give out the biggest raises in 20 years'}, 'excerpt': {'rendered': '<p>Employers forked out serious money on compe"
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "long_n": 201,
+  "long_r2": 0.4845580077403221,
+  "long_adjusted_r2": 0.4767086372998194,
+  "leave_one_month_out_media_coefficient_range": [
+    2.586220610006158,
+    6.371954564657887
+  ],
+  "max_cook_month": "2020-02-29",
+  "matched_release_cases": 4,
+  "human_ratings_completed": 0
+}

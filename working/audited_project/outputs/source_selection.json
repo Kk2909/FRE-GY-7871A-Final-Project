@@ -1,0 +1,11 @@
+{
+  "primary_sources": [
+    "NPR",
+    "Colorado Sun",
+    "Hacker News"
+  ],
+  "local_coverage_counts": {
+    "Colorado Sun": 47
+  },
+  "rule": "Choose state outlet with most observed months containing at least3 eligible independent titles, before outcome fitting"
+}

@@ -1,0 +1,6 @@
+from pathlib import Path
+import pandas as pd,hashlib
+R=Path(__file__).resolve().parent;O=R/'outputs_v7';d=pd.read_csv(O/'corpus.csv',keep_default_na=False);sources=['NPR','Colorado Sun','Hacker News'];cov=pd.crosstab(d.month,d.source);months=cov.index[(cov[sources]>=3).all(axis=1)];d=d[d.source.isin(sources)&d.month.isin(months)].sort_values('sample_hash').groupby(['source','month'],group_keys=False).head(5).copy();d['blind_hash']=d.record_id.map(lambda x:hashlib.sha256(('direct-primary-v7-'+x).encode()).hexdigest());d=d.sort_values('blind_hash').reset_index(drop=True);d['coding_id']=['A'+str(i+1).zfill(3) for i in range(len(d))];d.to_csv(O/'primary_ai_mapping.csv',index=False);d[['coding_id','title']].to_csv(O/'primary_ai_blind.csv',index=False)
+old=pd.read_csv(O/'new_ai_reference_300.csv');known=old.set_index('record_id').reference_tone.to_dict();d['reference_tone']=d.record_id.map(known);d[['coding_id','record_id','reference_tone']].to_csv(O/'primary_ai_reused_reference.csv',index=False)
+print('Primary direct-AI sample',len(d),'balanced months',len(months),'reused blind references',int(d.reference_tone.notna().sum()))
+for _,r in d.iterrows():print(r.coding_id+' '+('['+str(int(r.reference_tone))+'] ' if pd.notna(r.reference_tone) else '')+r.title)

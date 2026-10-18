@@ -1,0 +1,79 @@
+test,pair,title,expected_tone,variant
+direction_foil,0,US inflation falls as gasoline prices decline.,1.0,
+direction_foil,0,US inflation rises as gasoline prices increase.,-1.0,
+direction_foil,1,The US unemployment rate falls as hiring accelerates.,1.0,
+direction_foil,1,The US unemployment rate rises as hiring slows.,-1.0,
+direction_foil,2,US employers add jobs and unemployment declines.,1.0,
+direction_foil,2,US employers cut jobs and unemployment increases.,-1.0,
+direction_foil,3,The US economy expands and real incomes grow.,1.0,
+direction_foil,3,The US economy contracts and real incomes shrink.,-1.0,
+direction_foil,4,American wages grow faster than consumer prices.,1.0,
+direction_foil,4,American wages fail to keep up with consumer prices.,-1.0,
+direction_foil,5,"US rents fall, making housing more affordable.",1.0,
+direction_foil,5,"US rents rise, making housing less affordable.",-1.0,
+direction_foil,6,US mortgage rates fall and monthly payments become more affordable.,1.0,
+direction_foil,6,US mortgage rates rise and monthly payments become less affordable.,-1.0,
+direction_foil,7,American households can now afford their debt payments.,1.0,
+direction_foil,7,American households can no longer afford their debt payments.,-1.0,
+direction_foil,8,"US grocery prices fall, easing pressure on household budgets.",1.0,
+direction_foil,8,"US grocery prices soar, increasing pressure on household budgets.",-1.0,
+direction_foil,9,US consumer spending grows as household finances improve.,1.0,
+direction_foil,9,US consumer spending falls as household finances worsen.,-1.0,
+direction_foil,10,Layoffs fall across the United States.,1.0,
+direction_foil,10,Layoffs rise across the United States.,-1.0,
+direction_foil,11,Americans report improving personal finances.,1.0,
+direction_foil,11,Americans report worsening personal finances.,-1.0,
+neutral_foil,0,The Federal Reserve meets on Wednesday.,0.0,
+neutral_foil,1,The Bureau of Labor Statistics will publish the inflation report tomorrow.,0.0,
+neutral_foil,2,The US employment report covers the month of January.,0.0,
+neutral_foil,3,The survey asks Americans about their personal finances.,0.0,
+neutral_foil,4,The US GDP release is scheduled for next week.,0.0,
+neutral_foil,5,Researchers explain how the consumer price index is calculated.,0.0,
+name_swap,V002,Gavin Newsom joins Trump in blaming big investors for housing crisis,,original
+name_swap,V002,Gavin Newsom joins Biden in blaming big investors for housing crisis,,swapped
+name_swap,V010,U.S. Supreme Court strikes down Trump’s tariffs. Here’s how they’ve affected California,,original
+name_swap,V010,U.S. Supreme Court strikes down Biden’s tariffs. Here’s how they’ve affected California,,swapped
+name_swap,V015,"California, 23 other states sue Trump over new tariffs",,original
+name_swap,V015,"California, 23 other states sue Biden over new tariffs",,swapped
+name_swap,V034,"With Trump and Talarico aligned on a gas tax holiday, Cornyn gets on board",,original
+name_swap,V034,"With Biden and Talarico aligned on a gas tax holiday, Cornyn gets on board",,swapped
+name_swap,V040,Texas town may offer a preview of Trump administration plan to force noncitizens from public housing,,original
+name_swap,V040,Texas town may offer a preview of Biden administration plan to force noncitizens from public housing,,swapped
+name_swap,V116,"Trump's 'roaring economy' meets a rough start to 2026 with job losses, rising gas prices and uncertainty | PBS News",,original
+name_swap,V116,"Biden's 'roaring economy' meets a rough start to 2026 with job losses, rising gas prices and uncertainty | PBS News",,swapped
+name_swap,V122,"Trump's approval on economy falls in AP-NORC poll, showing new warning signs for president",,original
+name_swap,V122,"Biden's approval on economy falls in AP-NORC poll, showing new warning signs for president",,swapped
+name_swap,V139,"US job market stalled in July as employers cut 23,000 jobs, delivering political setback to Trump",,original
+name_swap,V139,"US job market stalled in July as employers cut 23,000 jobs, delivering political setback to Biden",,swapped
+name_swap,V142,Republicans face midterm backlash from factory workers squeezed out of jobs by Trump's tariffs,,original
+name_swap,V142,Republicans face midterm backlash from factory workers squeezed out of jobs by Biden's tariffs,,swapped
+name_swap,V145,Republicans face midterm backlash from factory workers over Trump's tariffs,,original
+name_swap,V145,Republicans face midterm backlash from factory workers over Biden's tariffs,,swapped
+name_swap,V152,Trump promised to lower prices for Americans. Here's what the data shows.,,original
+name_swap,V152,Biden promised to lower prices for Americans. Here's what the data shows.,,swapped
+name_swap,V159,Trump insists inflation is low as CPI report shows a 3.7% increase,,original
+name_swap,V159,Biden insists inflation is low as CPI report shows a 3.7% increase,,swapped
+source_prefix,V001,NPR: Many L.A. fire survivors face insurance delays and can’t return home a year later,,NPR
+source_prefix,V001,Fox News: Many L.A. fire survivors face insurance delays and can’t return home a year later,,Fox News
+source_prefix,V001,MSNBC: Many L.A. fire survivors face insurance delays and can’t return home a year later,,MSNBC
+source_prefix,V002,NPR: Gavin Newsom joins Trump in blaming big investors for housing crisis,,NPR
+source_prefix,V002,Fox News: Gavin Newsom joins Trump in blaming big investors for housing crisis,,Fox News
+source_prefix,V002,MSNBC: Gavin Newsom joins Trump in blaming big investors for housing crisis,,MSNBC
+source_prefix,V003,NPR: Gavin Newsom forecasts a rosier California budget and banks on AI boom continuing,,NPR
+source_prefix,V003,Fox News: Gavin Newsom forecasts a rosier California budget and banks on AI boom continuing,,Fox News
+source_prefix,V003,MSNBC: Gavin Newsom forecasts a rosier California budget and banks on AI boom continuing,,MSNBC
+source_prefix,V004,"NPR: Fires burn swiftly, but insurance battles linger: New bills propose consumer-friendly regulations",,NPR
+source_prefix,V004,"Fox News: Fires burn swiftly, but insurance battles linger: New bills propose consumer-friendly regulations",,Fox News
+source_prefix,V004,"MSNBC: Fires burn swiftly, but insurance battles linger: New bills propose consumer-friendly regulations",,MSNBC
+source_prefix,V005,NPR: Los Angeles might tweak its ‘mansion tax.’ Here’s why that matters for the rest of California,,NPR
+source_prefix,V005,Fox News: Los Angeles might tweak its ‘mansion tax.’ Here’s why that matters for the rest of California,,Fox News
+source_prefix,V005,MSNBC: Los Angeles might tweak its ‘mansion tax.’ Here’s why that matters for the rest of California,,MSNBC
+source_prefix,V006,NPR: New Talarico campaign ad puts spotlight on his role in passing bill that caps insulin costs,,NPR
+source_prefix,V006,Fox News: New Talarico campaign ad puts spotlight on his role in passing bill that caps insulin costs,,Fox News
+source_prefix,V006,MSNBC: New Talarico campaign ad puts spotlight on his role in passing bill that caps insulin costs,,MSNBC
+source_prefix,V007,NPR: Los Angeles won’t be tweaking its ‘mansion tax.’ Now the debate is likely to go statewide,,NPR
+source_prefix,V007,Fox News: Los Angeles won’t be tweaking its ‘mansion tax.’ Now the debate is likely to go statewide,,Fox News
+source_prefix,V007,MSNBC: Los Angeles won’t be tweaking its ‘mansion tax.’ Now the debate is likely to go statewide,,MSNBC
+source_prefix,V008,"NPR: Factory-built housing hasn’t taken off in California yet, but this year might be different",,NPR
+source_prefix,V008,"Fox News: Factory-built housing hasn’t taken off in California yet, but this year might be different",,Fox News
+source_prefix,V008,"MSNBC: Factory-built housing hasn’t taken off in California yet, but this year might be different",,MSNBC

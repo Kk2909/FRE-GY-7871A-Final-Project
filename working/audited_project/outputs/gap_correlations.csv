@@ -1,0 +1,6 @@
+text_lag_months,n,pearson,interpretation
+0,46,0.1399404431874209,"Descriptive, noncausal"
+1,46,0.025824662591226545,"Descriptive, noncausal"
+2,45,-0.05833411098922875,"Descriptive, noncausal"
+-1,45,0.08154785215845803,Future-text falsification diagnostic
+-2,44,0.01406165288965404,Future-text falsification diagnostic

@@ -1,0 +1,11 @@
+from pathlib import Path
+R=Path(__file__).resolve().parent;DEST=R.parent.parent/'company_final';old=R.parent/'final_audited/Monitoring_Dashboard.html'
+s=old.read_text();s=s.replace('<title>Consumer sentiment monitor</title>','<title>Consumer sentiment | Research monitor</title>')
+s=s.replace('background:#f5f7f6','background:#eef2f4').replace('color:#20384b','color:#142b42').replace('max-width:1100px','max-width:1180px').replace('padding:32px','padding:40px').replace('font-size:34px','font-size:40px')
+s=s.replace('<main><h1>','<main><p class="eyebrow">ECONOMIC RESEARCH / FORECAST MONITORING</p><h1>')
+s=s.replace('</style>','nav{display:flex;flex-wrap:wrap;gap:22px;padding:15px 0;border-top:1px solid #c9d7dc;border-bottom:1px solid #c9d7dc;margin:24px 0}nav a{font-weight:600;text-decoration:none;color:#007f78}.eyebrow{font-size:13px;letter-spacing:1.7px;color:#007f78;font-weight:700}section{background:white;padding:22px 24px;margin:20px 0;border-bottom:2px solid #d9e5e8}section h2{font-size:24px;margin-top:0}canvas{border-top:1px solid #e7edef}.status{font-size:15px;border-left-color:#b96e45;background:#fff4e9}button{background:#142b42;color:white;border-color:#142b42}table th{background:#142b42;color:white}footer{font-size:14px}a:hover{text-decoration:underline}@media(max-width:700px){main{padding:18px}h1{font-size:30px}section{padding:16px}table{font-size:12px}} </style>')
+s=s.replace('<label>Show data from','<nav><a href="#forecast-section">Forecast</a><a href="#media-section">Media</a><a href="#quality-section">Coverage</a><a href="#performance-section">Performance</a><a href="#facts-section">Factual cases</a></nav><label>Show data from')
+for title,id in [('Sentiment and the selected prediction','forecast-section'),('Original title tone','media-section'),('Source composition and wording','quality-section'),('Model performance','performance-section'),('Release-calibrated title cases','facts-section')]:s=s.replace('<section><h2>'+title,'<section id="'+id+'"><h2>'+title)
+s=s.replace('Exploratory retrospective evaluation with revised inputs and assumed posting lags.','Research status: exploratory. Historical inputs are revised snapshots with assumed posting lags.')
+(DEST/'Monitoring_Dashboard.html').write_text(s)
+print('Company dashboard: same data and interaction logic, revised layout.')

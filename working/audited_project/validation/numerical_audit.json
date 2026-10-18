@@ -1,0 +1,41 @@
+{
+  "raw_formula_max_absolute_error": 3.552713678800501e-15,
+  "workbook_outcome_and_calendar_lag": "pass",
+  "titles_traceable_to_metadata": 670,
+  "balanced_media_months": 47,
+  "complete_media_targets": 45,
+  "all_predictions_max_absolute_error": 5.115907697472721e-13,
+  "independent_HAC_coefficient_checks": 63,
+  "HAC_max_absolute_se_error": 2.3803181647963356e-13,
+  "forecast_dates": [
+    "2024-11",
+    "2024-12",
+    "2025-01",
+    "2025-02",
+    "2025-03",
+    "2025-04",
+    "2025-05",
+    "2025-06",
+    "2025-07",
+    "2025-08",
+    "2025-09",
+    "2025-10",
+    "2025-12",
+    "2026-01",
+    "2026-02",
+    "2026-03",
+    "2026-04",
+    "2026-05",
+    "2026-06",
+    "2026-08",
+    "2026-09"
+  ],
+  "forecast_n": 21,
+  "preliminary_scored": 0,
+  "same_session_AI_agreement": 0.98,
+  "same_session_AI_kappa": 0.9682472480948349,
+  "missing_UNRATE_months": [
+    "2025-10"
+  ],
+  "status": "PASS numerical audit. Human validation and exact vintage reconstruction remain incomplete."
+}

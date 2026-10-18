@@ -1,0 +1,18 @@
+{
+ "tone_positive":"The text describes improving economic conditions.",
+ "tone_negative":"The text describes worsening economic conditions.",
+ "topic_prices":"The text is about inflation, prices or the cost of living.",
+ "topic_labor":"The text is about jobs, unemployment, hiring, layoffs or wages.",
+ "topic_housing":"The text is about housing costs, rents, home prices or mortgages.",
+ "topic_growth":"The text is about economic growth, consumer spending or recession.",
+ "topic_debt":"The text is about household debt, credit cards or loan payments.",
+ "topic_policy":"The text is about tariffs, taxes, government spending or economic policy.",
+ "frame_level":"The text emphasizes how high prices or household costs already are.",
+ "frame_rate":"The text emphasizes the rate at which prices or inflation are changing.",
+ "frame_household":"The text emphasizes people's personal finances or household experience.",
+ "frame_national":"The text emphasizes national economic statistics or the overall economy.",
+ "frame_forecast":"The text emphasizes forecasts, expectations or future economic risks.",
+ "political_blame":"The text blames a political leader or government institution for economic problems.",
+ "political_credit":"The text credits a political leader or government institution for economic improvements.",
+ "emotional":"The wording expresses strong fear, anger, panic, pain or excitement about economic conditions."
+}

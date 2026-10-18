@@ -1,0 +1,1 @@
+PASS: syntax, initial figures, model/year changes, all 21-target scores, preliminary exclusion, four factual cases, valid/invalid import, export. DOM and canvas stubs; no browser rendering claimed.

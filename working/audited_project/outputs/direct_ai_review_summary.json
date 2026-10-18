@@ -1,0 +1,21 @@
+{
+  "n_primary_selected": 691,
+  "n_relevant": 670,
+  "n_excluded": 21,
+  "by_source": {
+    "Hacker News": 227,
+    "Colorado Sun": 223,
+    "NPR": 220
+  },
+  "n_second_pass": 150,
+  "agreement": 0.98,
+  "kappa": 0.9682472480948349,
+  "kappa_cluster_ci95": [
+    0.9250262406665959,
+    1.0
+  ],
+  "n_disagreements": 3,
+  "n_uniform_policy_reviews": 10,
+  "n_missing_raw_nli": 0,
+  "interpretation": "Same-session AI consistency, not independent human accuracy. Review carryover and common model errors can inflate agreement. No financial outcome inspected before finalization."
+}

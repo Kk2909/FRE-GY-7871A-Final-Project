@@ -1,0 +1,47 @@
+[
+  [
+    "Economic narratives and consumer sentiment",
+    35,
+    "My project asks whether economic news helps explain weak US consumer sentiment beyond economic conditions. I compare three explanations: household pressures, media information and framing, and measurement or model limitations. I collected and coded original public titles, then connected their monthly tone to linear regressions. The main result is conditional. News helps a narrow economic model in the observed sample, but that benefit does not survive broader controls and recent sentiment. I therefore do not establish media bias as the main cause of pessimism."
+  ],
+  [
+    "The economic baseline and its gap",
+    45,
+    "The outcome is the Michigan sentiment index, which combines views about finances, business conditions, and buying conditions. It is not a percentage of optimistic people. The economic baseline uses unemployment, annual PCE inflation, and quarterly annualized GDP growth. A separate long-history evaluation covers 81 months. Its average error since 2022 is minus 14.85 index points, meaning observed sentiment is below the model prediction. That gap is model-dependent. Missing household pressures, expectations, politics, and survey differences can all contribute. Lower inflation also does not reverse the increase in prices that households already face."
+  ],
+  [
+    "Our original NLP measurement",
+    50,
+    "The original sample contains 670 relevant titles from NPR, Colorado Sun, and Hacker News across 47 balanced months. Each source gets equal weight. A title receives minus one for adverse conditions, zero for mixed or undirected language, and plus one for favorable conditions. We average within source and then across sources. This measures content supply, not what survey respondents read. Automatic classifiers transferred poorly, so the primary measure uses frozen assistant labels. A repeated AI review agreed on 147 of 150 items. That is internal consistency. The required two independent human ratings are still pending and are a material limitation."
+  ],
+  [
+    "Three models and a matched control",
+    55,
+    "M1 contains unemployment, inflation, and GDP. M2 adds our original tone measure. M3 adds cumulative prices, real-income growth, a presidency-era indicator, and a survey-era indicator. We also remove tone from M3 to isolate its contribution. Each model trains initially on 24 monthly observations and then predicts the same 21 later targets. M1 has RMSE 12.07. M2 improves to 10.82. M3 gives 6.06, but its identical controls without tone already give 5.82. The M1-to-M3 improvement therefore cannot be credited to media. The narrow news gain has an uncertainty interval that crosses zero."
+  ],
+  [
+    "Recent sentiment is a demanding benchmark",
+    45,
+    "RMSE measures typical prediction error in index points, with extra weight on large mistakes. Lower is better. Sentiment persists, so a serious forecasting model must compete with recent sentiment. Simply predicting last month unchanged gives 4.09 points of error on these same targets. Dynamic controls give 3.98. Adding our tone measure raises that error to 4.32. These point estimates challenge the claim that the original AI index offers reliable additional information. They do not prove that news never matters, and the small, previously inspected test sample does not establish a permanent winning model."
+  ],
+  [
+    "The media association weakens with controls",
+    50,
+    "The narrow regression associates a 0.1 increase in tone with 1.99 additional sentiment points. With full controls, that becomes 0.52, and its interval crosses zero. With prior sentiment, it falls to 0.17 and remains uncertain. These are conditional associations, not the effect of changing media exposure. Some predictors strongly overlap, and the controlled model uses nine parameters with only 24 initial observations. The inputs also use revised historical snapshots and assumed posting buffers. We therefore describe the forecasts as retrospective. We do not claim that every input matches the exact value available in history."
+  ],
+  [
+    "Framing requires a factual benchmark",
+    45,
+    "A concrete example comes from the July 2020 GDP release. One title reports a 32.9 percent decline, while another reports 9.5 percent. The first is an annualized rate. The second is the actual quarterly decline. Both magnitudes can match the same event, but omitting the unit creates ambiguity. We flag that title-level framing issue without declaring an unseen whole article false. Other selected titles accurately describe favorable jobs and inflation news. Negative wording, emotional language, numerical accuracy, and reader bias are separate concepts. These purposive cases do not estimate the share of biased coverage."
+  ],
+  [
+    "A causal test and prospective monitoring",
+    50,
+    "The present analysis cannot identify national media causality because it lacks respondent exposure. The permitted extension is a detailed causal-design proposal. After institutional review, the proposal randomizes 600 adults among three equally factual summaries: price-level emphasis, inflation-rate emphasis, and balanced emphasis. The facts and source stay constant. We measure changes in beliefs, recall, and sentiment-related responses. No experiment has run. Even a causal vignette effect would require representative exposure and transport assumptions to explain the national Michigan index. The dashboard supports future monitoring, with missingness, intervals, and preliminary observations visible."
+  ],
+  [
+    "What the evidence supports",
+    45,
+    "My conclusion is that the narrow economic baseline misses important information, while our AI tone index does not reliably improve the controlled comparisons. I cannot assign a causal share of pessimism to media, household strain, politics, or survey changes. One dictionary sensitivity improves a dynamic forecast, so there is conflicting exploratory evidence that deserves future validation. For financial forecasting, the practical lesson is to compare text signals with persistence and household information before using them. Independent human validation and historical-vintage reconstruction remain unfinished. Those limits are part of the result, not hidden behind improved regression fit."
+  ]
+]

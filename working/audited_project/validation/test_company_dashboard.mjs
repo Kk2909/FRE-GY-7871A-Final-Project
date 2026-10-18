@@ -1,0 +1,16 @@
+import fs from 'node:fs/promises';import vm from 'node:vm';
+const html=await fs.readFile('/workspace/scratch/2560934d6cb7/company_final/Monitoring_Dashboard.html','utf8');const code=html.match(/<script>([\s\S]*?)<\/script>/)[1];
+const canvas={clearRect(){},fillText(){},beginPath(){},moveTo(){},lineTo(){},stroke(){},closePath(){},fill(){},arc(){}};
+const els={};const element=()=>({children:[],textContent:'',value:'',listeners:{},append(x){this.children.push(x)},replaceChildren(){this.children=[]},addEventListener(k,v){this.listeners[k]=v},getContext(){return canvas},click(){}});
+for(const id of ['start','model','stamp','latest','sentiment','gap','tone','coverage','accuracy','longaccuracy','factual','events','export','import','error'])els[id]=element();els.start.value='2024';els.model.value='M1 Economics';
+let blobCount=0;const context=vm.createContext({document:{getElementById:id=>els[id],createElement:()=>element()},console,Blob,URL:{createObjectURL(){blobCount++;return 'blob:test'},revokeObjectURL(){}},setTimeout:f=>f()});new vm.Script(code).runInContext(context);const test=context.monitorTest;
+if(!els.latest.textContent.includes('46.30'))throw Error('Latest preliminary value');
+if(els.factual.children.length!==5)throw Error('Four factual cases required');
+els.model.value='Last month';els.model.listeners.change();if(!els.latest.textContent.includes('48.10'))throw Error('Model selector');
+els.start.value='2026';els.start.listeners.change();if(els.coverage.children.length!==10)throw Error('2026 has nine captured monthly rows');
+const data=JSON.parse(await fs.readFile('/workspace/scratch/2560934d6cb7/company_final/Monitoring_Data.json','utf8'));const a=test.accuracy(data.forecasts);if(a.some(r=>r[1]!==21))throw Error('Matched target count');if(a.find(r=>r[0]==='M1 Economics')[2]!=='12.07')throw Error('Score recomputation');
+let rejected=false;try{test.validate({...data,schema_version:999})}catch(e){rejected=true}if(!rejected)throw Error('Invalid schema accepted');
+await els.import.listeners.change({target:{files:[{text:async()=>JSON.stringify(data)}]}});if(els.error.textContent)throw Error(els.error.textContent);
+await els.import.listeners.change({target:{files:[{text:async()=>'invalid JSON'}]}});if(!els.error.textContent)throw Error('Missing invalid-import feedback');
+els.export.listeners.click();if(blobCount!==1)throw Error('Export handler');
+console.log('PASS: syntax, initial figures, model/year changes, all 21-target scores, preliminary exclusion, four factual cases, valid/invalid import, export. DOM and canvas stubs; no browser rendering claimed.');

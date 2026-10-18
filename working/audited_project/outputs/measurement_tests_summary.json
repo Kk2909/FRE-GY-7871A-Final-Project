@@ -1,0 +1,22 @@
+{
+  "direction_foil": {
+    "n": 24,
+    "agreement": 0.75
+  },
+  "neutral_foil": {
+    "n": 6,
+    "agreement": 0.8333333333333334
+  },
+  "name_swap": {
+    "n_pairs": 12,
+    "label_flip_pairs": 0,
+    "mean_score_range": 0.041771163431697546,
+    "max_score_range": 0.1378152304291022
+  },
+  "source_prefix": {
+    "n_pairs": 8,
+    "label_flip_pairs": 0,
+    "mean_score_range": 0.07587075730531018,
+    "max_score_range": 0.18260213435029518
+  }
+}
